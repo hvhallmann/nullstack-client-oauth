@@ -66,6 +66,7 @@ class Home extends Nullstack {
   logoutUser() {
     localStorage.removeItem('OAuthToken')
     localStorage.removeItem('OAuthRefreshToken')
+    this.statusMessage = ''
     this.user = null
   }
 
