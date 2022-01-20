@@ -14,5 +14,8 @@
     "build": "npx nullstack build --mode=ssr",
     "tailwind": "npx tailwindcss -o ./src/tailwind.css",
     "dev": "concurrently \"npm:tailwind -- --watch\" \"npm:start\" "
+  },
+  "dependencies": {
+    "js-cookie": "^3.0.1"
   }
 }

@@ -1,11 +1,14 @@
 import Nullstack from 'nullstack';
 import './tailwind.css';
-import Home from './Home';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Success from './pages/Success';
 
 class Application extends Nullstack {
 
-  prepare({ page }) {
-    page.locale = 'pt-BR';
+  prepare(context) {
+    context.page.locale = 'pt-BR';
+    context.user = null
   }
 
   renderHead() {
@@ -20,10 +23,11 @@ class Application extends Nullstack {
     )
   }
 
-  render() {
+  render({ user }) {
     return (
-      <main>
+      <main class="flex min-h-screen">
         <Head />
+        <Login route="/login" />
         <Home route="/" />
       </main>
     )
