@@ -1,8 +1,6 @@
 import Nullstack from 'nullstack';
 import oauthConfig from '../config/oauth'
 
-import Cookies from 'js-cookie'
-
 class Login extends Nullstack {
   
   error = ''

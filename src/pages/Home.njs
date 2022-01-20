@@ -59,6 +59,8 @@ class Home extends Nullstack {
 
     localStorage.setItem('OAuthToken', response.access_token)
     localStorage.setItem('OAuthRefreshToken', response.refresh_token)
+    this.token = response.access_token
+    this.refreshToken = response.refresh_token
     this.statusMessage = 'Token updated with success'
 
   }
