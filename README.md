@@ -1,4 +1,4 @@
-# Henrique Oauth Client
+# subodomain Oauth Client
 
 <img src='https://raw.githubusercontent.com/nullstack/nullstack/master/nullstack.png' height='60' alt='Nullstack' />
 
@@ -14,7 +14,7 @@ Copy the environment sample to a .env file
 NULLSTACK_PROJECT_NAME="[dev] Henrique Oauth Client"
 NULLSTACK_PROJECT_DOMAIN="localhost"
 NULLSTACK_PROJECT_COLOR="#D22365"
-NULLSTACK_SERVER_PORT="3000"
+NULLSTACK_SERVER_PORT="4000"
 ```
 
 Run the app in development mode:
